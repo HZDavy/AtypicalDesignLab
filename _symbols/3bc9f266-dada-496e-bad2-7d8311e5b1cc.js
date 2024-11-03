@@ -3177,7 +3177,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-19bt6nw");
+			attr(a, "class", "link svelte-c2welv");
 			attr(a, "href", a_href_value = /*link*/ ctx[9].url);
 			toggle_class(a, "active", /*link*/ ctx[9].url === window.location.pathname);
 		},
@@ -3320,9 +3320,9 @@ function create_if_block(ctx) {
 		h() {
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-19bt6nw");
+			attr(button, "class", "svelte-c2welv");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-19bt6nw");
+			attr(nav, "class", "svelte-c2welv");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3572,21 +3572,21 @@ function create_fragment(ctx) {
 		},
 		h() {
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-19bt6nw");
-			attr(nav, "class", "svelte-19bt6nw");
-			attr(div0, "class", "desktop-nav svelte-19bt6nw");
+			attr(a0, "class", "logo svelte-c2welv");
+			attr(nav, "class", "svelte-c2welv");
+			attr(div0, "class", "desktop-nav svelte-c2welv");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-19bt6nw");
+			attr(a1, "class", "logo svelte-c2welv");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(div1, "class", "mobile-nav svelte-19bt6nw");
-			attr(div2, "class", "section-container svelte-19bt6nw");
-			attr(h1, "class", "headline svelte-19bt6nw");
-			attr(div3, "class", "section-container svelte-19bt6nw");
+			attr(div1, "class", "mobile-nav svelte-c2welv");
+			attr(div2, "class", "section-container svelte-c2welv");
+			attr(h1, "class", "headline svelte-c2welv");
+			attr(div3, "class", "section-container svelte-c2welv");
 			set_style(header, "background-image", "url('" + /*background*/ ctx[3].url + "')");
 			attr(header, "role", "img");
 			attr(header, "aria-label", header_aria_label_value = /*background*/ ctx[3].alt);
-			attr(header, "class", "svelte-19bt6nw");
+			attr(header, "class", "svelte-c2welv");
 		},
 		m(target, anchor) {
 			insert_hydration(target, header, anchor);
