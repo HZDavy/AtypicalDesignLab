@@ -1,4 +1,4 @@
-// Site Header - Updated January 30, 2025
+// Site Header - Updated February 26, 2025
 function noop() { }
 const identity = x => x;
 function assign(tar, src) {
@@ -266,14 +266,6 @@ function attr(node, attribute, value) {
     else if (node.getAttribute(attribute) !== value)
         node.setAttribute(attribute, value);
 }
-/**
- * List of attributes that should always be set through the attr method,
- * because updating them through the property setter doesn't work reliably.
- * In the example of `width`/`height`, the problem is that the setter only
- * accepts numeric values, but the attribute can also be set to a string like `50%`.
- * If this list becomes too big, rethink this approach.
- */
-const always_set_through_set_attribute = ['width', 'height'];
 function set_attributes(node, attributes) {
     // @ts-ignore
     const descriptors = Object.getOwnPropertyDescriptors(node.__proto__);
@@ -287,7 +279,7 @@ function set_attributes(node, attributes) {
         else if (key === '__value') {
             node.value = node[key] = attributes[key];
         }
-        else if (descriptors[key] && descriptors[key].set && always_set_through_set_attribute.indexOf(key) === -1) {
+        else if (descriptors[key] && descriptors[key].set) {
             node[key] = attributes[key];
         }
         else {
@@ -401,7 +393,7 @@ function set_data(text, data) {
     text.data = data;
 }
 function set_style(node, key, value, important) {
-    if (value == null) {
+    if (value === null) {
         node.style.removeProperty(key);
     }
     else {
