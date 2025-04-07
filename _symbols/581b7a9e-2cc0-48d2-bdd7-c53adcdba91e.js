@@ -3340,8 +3340,6 @@ function create_fragment(ctx) {
 	let t6;
 	let br1;
 	let t7;
-	let br2;
-	let t8;
 	let header_aria_label_value;
 	let current;
 	let mounted;
@@ -3405,9 +3403,7 @@ function create_fragment(ctx) {
 			br0 = element("br");
 			t6 = text("Design");
 			br1 = element("br");
-			t7 = text("Lab");
-			br2 = element("br");
-			t8 = text("©");
+			t7 = text("Lab©");
 			this.h();
 		},
 		l(nodes) {
@@ -3462,9 +3458,7 @@ function create_fragment(ctx) {
 			br0 = claim_element(h1_nodes, "BR", {});
 			t6 = claim_text(h1_nodes, "Design");
 			br1 = claim_element(h1_nodes, "BR", {});
-			t7 = claim_text(h1_nodes, "Lab");
-			br2 = claim_element(h1_nodes, "BR", {});
-			t8 = claim_text(h1_nodes, "©");
+			t7 = claim_text(h1_nodes, "Lab©");
 			h1_nodes.forEach(detach);
 			div3_nodes.forEach(detach);
 			header_nodes.forEach(detach);
@@ -3520,8 +3514,6 @@ function create_fragment(ctx) {
 			append_hydration(h1, t6);
 			append_hydration(h1, br1);
 			append_hydration(h1, t7);
-			append_hydration(h1, br2);
-			append_hydration(h1, t8);
 			current = true;
 
 			if (!mounted) {
