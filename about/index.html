@@ -2,7 +2,7 @@
   <html lang="en">
     <head>
       <meta name="generator" content="Primo" />
-      <title>关于 | 非典型设计研究室</title><!-- HEAD_svelte-e7k49u_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><link rel="icon" type="image/png" sizes="32x32" href="https://mmnerxsqtqthbxfrxwjm.supabase.co/storage/v1/object/public/images/1242a33f-b0e6-479d-b6cc-32b64105576f/1730280247700FV.svg"><link rel="preconnect" href="https://fonts.bunny.net"><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com" crossorigin><script>// 动态创建和添加字体样式，避免干扰响应式布局
+      <title>关于 | 非典型设计研究室</title><!-- HEAD_svelte-gvieur_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><link rel="icon" type="image/png" sizes="32x32" href="https://mmnerxsqtqthbxfrxwjm.supabase.co/storage/v1/object/public/images/1242a33f-b0e6-479d-b6cc-32b64105576f/1730280247700FV.svg"><link rel="preconnect" href="https://fonts.bunny.net"><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com" crossorigin><script>// 动态创建和添加字体样式，避免干扰响应式布局
   (function() {
     // 创建style元素
     var style = document.createElement('style');
@@ -44,130 +44,98 @@
   })();
 </script><meta name="description" content="非典型设计研究室是一个创意设计研究机构，成立于2021年，致力于本土化的当代独立设计方法研究与实践。"><style>/* Reset & standardize default styles */
 @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
-
 /* Design tokens (apply to components) */
 :root {
-  /* Custom theme options */
-  --color-accent: #000000;
-
-  /* Base values */
-  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
-  --border-radius: 0;
-  --border-color: #000000;
+/* Custom theme options */
+--color-accent: #000000;
+/* Base values */
+--box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+--border-radius: 0;
+--border-color: #000000;
 }
-
 /* Root element (use instead of `body`) */
 #page {
-  font-family: system-ui, sans-serif;
-  color: #111;
-  line-height: 1.5;
-  font-size: 1.125rem;
-  background: white;
+font-family: system-ui, sans-serif;
+color: #111;
+line-height: 1.5;
+font-size: 1.125rem;
+background: white;
 }
-
 /* Elements */
 .section-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 5rem 2rem;
+max-width: 1200px;
+margin: 0 auto;
+padding: 5rem 2rem;
 }
-
 a.link {
-  line-height: 1.3;
-
-  border-bottom: 2px solid var(--color-accent);
-  transform: translateY(-2px); /* move link back into place */
-  transition: var(--transition, 0.1s border);
+line-height: 1.3;
+border-bottom: 2px solid var(--color-accent);
+transform: translateY(-2px); /* move link back into place */
+transition: var(--transition, 0.1s border);
 }
-
 a.link:hover {
-    border-color: transparent;
-  }
-
-  .heading {
-  font-size: 2.5rem;
-  line-height: 1.15;
-
+border-color: transparent;
+ }
+ .heading {
+font-size: 2.5rem;
+line-height: 1.15;
 }
-
 .button {
-  color: white;
-  background: var(--color-accent, rebeccapurple);
-  border-radius: 0;
-  padding: 18px 24px;
-  transition: var(--transition, 0.1s box-shadow);
-  border: 0; /* reset */
-  border-radius: 70px;
+color: white;
+background: var(--color-accent, rebeccapurple);
+border-radius: 0;
+padding: 18px 24px;
+transition: var(--transition, 0.1s box-shadow);
+border: 0; /* reset */
+border-radius: 70px;
 }
-
 .button:hover {
-    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);
-  }
-
+box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);
+ }
 .button.inverted {
-    background: transparent;
-    color: var(--color-accent, rebeccapurple);
-  }
-
+background: transparent;
+color: var(--color-accent, rebeccapurple);
+ }
 /* Content Section */
 .content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
+max-width: 900px;
+margin: 0 auto;
+padding: 3rem 2rem;
 }
 .content p {
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-.content img {
-    width: 100%;
-    margin: 2rem 0;
-    box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
-  }
-.content a.link {
-    line-height: 1.3;
-    font-weight: 500;
-    border-bottom: 2px solid var(--color-accent);
-    transform: translateY(-2px); /* move link back into place */
-    transition: var(--transition, 0.1s border);
-  }
-.content a.link:hover {
-      border-color: transparent;
-    }
-.content h1 {
-    font-size: 3rem;
-    font-weight: 500;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-  }
-.content h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-.content h3 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-.content ul {
-    list-style: disc;
-    padding: 0.5rem 0;
-    padding-left: 1.25rem;
-  }
-.content ol {
-    list-style: decimal;
-    padding: 0.5rem 0;
-    padding-left: 1.25rem;
-  }
-.content blockquote {
-    padding: 2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-left: 5px solid var(--color-accent);
-  }
-</style><!-- HEAD_svelte-e7k49u_END -->
+margin-bottom: 1rem;
+}
+
+/* 页脚特例 - 这些规则只会影响footer内的元素 */
+footer .content p,
+footer .content h1, 
+footer .content h2, 
+footer .content h3, 
+footer .content h4, 
+footer .content h5, 
+footer .content h6, 
+footer .content li, 
+footer .content a,
+footer .content div {
+  line-height: 0.7 !important; /* 更小的行间距 */
+}
+
+/* 为新添加的行设置上边距 */
+footer .content p.additional-info {
+  margin-top: 2rem !important;
+}
+
+/* MiSans字体链接样式 */
+footer .content .font-link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  transition: border-color 0.2s ease;
+}
+
+footer .content .font-link:hover {
+  border-color: transparent;
+}</style><!-- HEAD_svelte-gvieur_END -->
       <style>.section-container.svelte-kcr1ut.svelte-kcr1ut{display:flex;justify-content:space-between;align-items:center;padding-block:2rem}.logo.svelte-kcr1ut.svelte-kcr1ut{font-size:1.5rem;font-weight:600;line-height:1.2}.desktop-nav.svelte-kcr1ut.svelte-kcr1ut{display:none;align-items:center;justify-content:space-between;width:100%}.desktop-nav.svelte-kcr1ut nav.svelte-kcr1ut{display:flex;gap:2rem}.desktop-nav.svelte-kcr1ut nav a.link.svelte-kcr1ut{border-color:transparent;font-size:0.95rem;padding-bottom:3px;position:relative;transition:color 0.2s ease}.desktop-nav.svelte-kcr1ut nav a.link.svelte-kcr1ut::after{content:"";position:absolute;width:0;height:1px;bottom:0;left:0;background-color:currentColor;transition:width 0.3s ease}.desktop-nav.svelte-kcr1ut nav a.link.svelte-kcr1ut:hover::after,.desktop-nav.svelte-kcr1ut nav a.link.active.svelte-kcr1ut::after{width:100%}.mobile-nav.svelte-kcr1ut.svelte-kcr1ut{display:flex;justify-content:space-between;align-items:center;width:100%;position:relative}#hamburger.svelte-kcr1ut.svelte-kcr1ut{background:none;border:none;cursor:pointer;width:24px;height:14px;position:relative;z-index:10;padding:0}#hamburger.svelte-kcr1ut span.svelte-kcr1ut{display:block;position:absolute;height:2px;width:100%;background:currentColor;border-radius:2px;opacity:1;left:0;transform-origin:center;transition:transform 0.3s ease,
               opacity 0.2s ease,
               top 0.3s ease}#hamburger.svelte-kcr1ut span.svelte-kcr1ut:nth-child(1){top:0px}#hamburger.svelte-kcr1ut span.svelte-kcr1ut:nth-child(2){top:6px}#hamburger.svelte-kcr1ut span.svelte-kcr1ut:nth-child(3){top:12px}#hamburger.open.svelte-kcr1ut span.svelte-kcr1ut:nth-child(1){top:6px;transform:rotate(45deg)}#hamburger.open.svelte-kcr1ut span.svelte-kcr1ut:nth-child(2){opacity:0;transform:translateX(-10px)}#hamburger.open.svelte-kcr1ut span.svelte-kcr1ut:nth-child(3){top:6px;transform:rotate(-45deg)}.mobile-menu.svelte-kcr1ut.svelte-kcr1ut{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(255, 255, 255, 0);-webkit-animation:svelte-kcr1ut-fadeInBackground 0.8s ease forwards;animation:svelte-kcr1ut-fadeInBackground 0.8s ease forwards;z-index:9;display:flex;flex-direction:column;justify-content:center}.menu-container.svelte-kcr1ut.svelte-kcr1ut{padding:2rem;text-align:center;display:flex;flex-direction:column;align-items:center;position:relative}.menu-item.svelte-kcr1ut.svelte-kcr1ut{display:block;font-size:1.8rem;font-weight:500;margin-bottom:2.5rem;opacity:0;position:relative;text-align:center;transform:translate(calc(50vw - 50%), calc(-50vh + 2rem)) scale(0.2) rotate(60deg);filter:blur(10px);-webkit-animation:svelte-kcr1ut-flyInFromHamburger 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;animation:svelte-kcr1ut-flyInFromHamburger 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;letter-spacing:0.05em}.menu-item.svelte-kcr1ut.svelte-kcr1ut:hover{transform:scale(1.05);transition:transform 0.3s ease}@-webkit-keyframes svelte-kcr1ut-fadeInBackground{0%{background:rgba(255, 255, 255, 0)}100%{background:rgba(255, 255, 255, 0.98)}}@keyframes svelte-kcr1ut-fadeInBackground{0%{background:rgba(255, 255, 255, 0)}100%{background:rgba(255, 255, 255, 0.98)}}@-webkit-keyframes svelte-kcr1ut-flyInFromHamburger{0%{opacity:0;transform:translate(calc(50vw - 50%), calc(-50vh + 2rem)) scale(0.2) rotate(60deg);filter:blur(10px);letter-spacing:-0.5em}10%{opacity:0.1}60%{opacity:0.8;transform:translate(0, 0) scale(1.1) rotate(-5deg);filter:blur(0);letter-spacing:0.1em}80%{letter-spacing:0.03em}100%{opacity:1;transform:translate(0, 0) scale(1) rotate(0deg);filter:blur(0);letter-spacing:0.05em}}@keyframes svelte-kcr1ut-flyInFromHamburger{0%{opacity:0;transform:translate(calc(50vw - 50%), calc(-50vh + 2rem)) scale(0.2) rotate(60deg);filter:blur(10px);letter-spacing:-0.5em}10%{opacity:0.1}60%{opacity:0.8;transform:translate(0, 0) scale(1.1) rotate(-5deg);filter:blur(0);letter-spacing:0.1em}80%{letter-spacing:0.03em}100%{opacity:1;transform:translate(0, 0) scale(1) rotate(0deg);filter:blur(0);letter-spacing:0.05em}}@media(min-width: 768px){.mobile-nav.svelte-kcr1ut.svelte-kcr1ut{display:none}.desktop-nav.svelte-kcr1ut.svelte-kcr1ut{display:flex}}
@@ -196,16 +164,16 @@ footer.svelte-1ep3kro.svelte-1ep3kro{background:#000000;color:white}.section-con
 <p>-</p>
 <p>○ 创始人 / 黄轶昊 Davy Huang</p><!-- HTML_TAG_END --></div></section></div> 
 <div class="section" id="section-185af9bf"><footer class="svelte-1ep3kro"><div class="section-container svelte-1ep3kro"><div class="content svelte-1ep3kro"><!-- HTML_TAG_START --><p><strong>Copyright © 2021-2025</strong></p>
-<p><strong>Yihao “Davy” Huang & AtypicalDesignLab</strong></p>
-<p>Font: <a href="https://hyperos.mi.com/font">Misans</a> by Xiaomi</p><!-- HTML_TAG_END --></div>
-    <div class="nav-items svelte-1ep3kro"><nav><h3 class="svelte-1ep3kro">社交媒体 / Social Media</h3>
-          <ul class="svelte-1ep3kro"><li><a class="link svelte-1ep3kro" href="https://www.xiaohongshu.com/user/profile/622dc0240000000010006ab0">小红书 / Xiaohongshu</a>
-              </li><li><a class="link svelte-1ep3kro" href="http://weixin.qq.com/r/7R1cRIDESd02rcQn90j-">微信公众号 / Official Account</a>
-              </li></ul>
-        </nav><nav><h3 class="svelte-1ep3kro">电子邮箱 / E-mail</h3>
-          <ul class="svelte-1ep3kro"><li><a class="link svelte-1ep3kro" href="">arch365@yeah.net</a>
-              </li></ul>
-        </nav></div></div></footer></div> 
+<p><strong>Yihao “Davy” Huang & AtypicalDesignLab</strong></p><!-- HTML_TAG_END -->
+ <p class="additional-info">Font: <a href="https://hyperos.mi.com/font" target="_blank" class="font-link">MiSans</a> by Xiaomi</p></div>
+ <div class="nav-items svelte-1ep3kro"><nav><h3 class="svelte-1ep3kro">社交媒体 / Social Media</h3>
+ <ul class="svelte-1ep3kro"><li><a class="link svelte-1ep3kro" href="https://www.xiaohongshu.com/user/profile/622dc0240000000010006ab0">小红书 / Xiaohongshu</a>
+ </li><li><a class="link svelte-1ep3kro" href="http://weixin.qq.com/r/7R1cRIDESd02rcQn90j-">微信公众号 / Official Account</a>
+ </li></ul>
+ </nav><nav><h3 class="svelte-1ep3kro">电子邮箱 / E-mail</h3>
+ <ul class="svelte-1ep3kro"><li><a class="link svelte-1ep3kro" href="">arch365@yeah.net</a>
+ </li></ul>
+ </nav></div></div></footer></div> 
 
       <script type="module">
       import('/_symbols/c146855c-deee-4d8e-99b2-5bd6df021c59.js')
